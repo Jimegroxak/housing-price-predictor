@@ -20,3 +20,7 @@ df.plot(kind='scatter', x='SquareFeet', y='SalePrice', title='Housing Prices and
 y_pred = model.predict(squareFeet)
 
 plt.plot(squareFeet, y_pred, color='red')
+plt.show()
+
+newSF = input('Enter a square footage: ')
+print(model.predict([float(newSF)]))
